@@ -1,0 +1,9 @@
+machine:
+  xcode:
+    version: "7.1"
+dependencies:
+  pre:
+    - sudo gem install cocoapods --version 0.39.0
+test:
+  override:
+    - bundle exec scan --scheme watchOSsample --destination='platform=iOS Simulator,id=321D1CF5-2514-4897-8B09-C133602F6DB5'
